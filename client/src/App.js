@@ -155,7 +155,6 @@ const updateItem = async (e) => {
       </button>
       
   </form>
-  <button onClick={()=>alert('hii')}>hiii</button>
   </div>
   
 </div>
