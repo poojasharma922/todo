@@ -1,0 +1,298 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: #c4bdbd; */
+  background-color: rgb(192, 173, 173);
+  width: 90vw;
+  height: 88vh;
+  margin: 65px auto;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.App h1{
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-family: initial;
+  font-size: 70px;
+  color: rgb(60, 5, 5);
+}
+.card1{
+  background-color: rgb(219, 207, 207);
+  width: 60vw;
+  border: none;
+  /* border: 1px solid rgb(235, 228, 228); */
+  margin-bottom: 25px;
+  border-radius: 20px;
+  padding: 4px;
+}
+::placeholder{
+  font-family: 'Courier New', Courier, monospace;
+}
+.form{
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  /* align-items: center; */
+  width: 100%;
+  /* margin-bottom: 1px; */
+}
+
+.form input[type="text"]{
+  padding: 10px;
+  /* width: 85%; */
+  border: 1px solid #bb9797;
+  /* border: none; */
+  background-color: rgb(233, 230, 230);
+  border-radius: 6px;
+  margin-bottom: 8px;
+}
+
+.form input[type="text"]:focus,
+.form button[type="submit"]:focus{
+  outline: none;
+}
+
+.form button[type="submit"]{
+  background-color: #300e11;
+  color: #fff;
+  border: none;
+  border-radius: 26px;
+  padding: 10px;
+  cursor: pointer;
+  width: 100%;
+  margin: auto;
+  font-family: inherit;
+}
+
+.card2{
+  width: 60vw;
+  height: 50vh;
+  border: none;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  margin-bottom: 35px;
+  background-color: rgb(219, 207, 207);
+  position: relative;
+  border-radius: 20px;
+  
+}
+
+::-webkit-scrollbar{
+  color: #d7cbcb00;
+}
+
+
+.todo-listItems{
+  /* width: 100%; */
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.todo-item{
+  display: flex;
+  flex-direction: column-reverse;
+  /* justify-content: space-between; */
+  align-items: center;
+  margin-bottom: 28px;
+  /* border: 1px solid rgb(195, 161, 161); */
+  border-radius: 20px;
+  
+}
+
+/* .todo-item button{
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  padding: 8px;
+} */
+
+.item-content{
+  
+  text-align: initial ;
+  /* padding-left: 8px;
+  padding-right: 10px;
+  padding-top: 1px;
+  padding-bottom: 4px; */
+  padding: 4px;
+  overflow-y: scroll;
+  font-family: initial;
+  width: 50vw;
+  color: rgb(66, 18, 18);
+  height: 8vh;
+  border: none;
+  /* border-bottom-left-radius: 12px;
+  border-top-right-radius: 12px; */
+  border-radius: 12px;
+  background-color: rgb(172, 145, 145);
+  margin: -8px
+  
+}
+
+@media screen and (max-width: 737px){
+  .todo-item{
+    display: flex;
+    
+  }
+}
+
+
+
+@media screen and (max-width: 513px){
+  .item-content{
+    height: 8vh;
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 411px){
+  .item-content{
+    height: 10vh;
+  }
+}
+
+i{
+  color: rgb(75, 19, 19);
+}
+
+.deleteupdate{
+  
+  /* display: flex; */
+  /* flex-direction: row; */
+  /* width: 60vw; */
+  /* border: 2px solid black; */
+  /* width: 200px; */
+  /* padding-right: 50px; */
+  /* align-self: self-end; */
+  right: 2px;
+  position: absolute;
+  cursor: pointer;
+  
+}
+
+
+@media (max-width:1311px) {
+  .item-content{
+    width: 48vw;
+  }
+
+}
+
+@media (max-width:935px) {
+  .item-content{
+    width: 45vw;
+  }
+  
+}
+
+@media (max-width:728px) {
+  .item-content{
+    width: 43vw;
+  }
+  
+}
+
+@media (max-width:621px) {
+  .item-content{
+    width: 40vw;
+    
+  }
+  
+}
+
+@media (max-width:521px) {
+  .item-content{
+    width: 36vw;
+  }
+  
+}
+
+@media (max-width:439px) {
+  .item-content{
+    width: 32vw;
+  }
+  .App h1{
+    font-size: 40px;
+  }
+
+  ::placeholder{
+    font-size: 12px;
+  }
+  
+}
+
+@media (max-width:379px) {
+  .item-content{
+    width: 28vw;
+  }
+  
+}
+
+@media (max-width:351px) {
+  .item-content{
+    width: 22vw;
+  }
+  
+}
+
+.delete{
+  margin-top: -9px;
+  margin-left: -50px;
+  
+}
+.update{
+  margin-left: -50px;
+  margin-bottom: -18px;
+  margin-top: -6px;
+}
+
+p{
+  margin-bottom: 2px;
+  
+}
+/* .todo-item button:focus{
+  outline: none;
+} */
+
+/* .update-item{
+  background-color: goldenrod;
+  color: #fff;
+}
+
+.delete-item{
+  background-color: red;
+  color: #fff;
+} */
+
+.update-form{
+  
+  display: flex;
+  /* justify-content: space-between; */
+  width: 45vw;
+}
+
+
+.update-new-input{
+  /* border: 2px solid black; */
+  width: 100%;
+  border-radius: 6px;
+  border: 1px solid #eee;
+  padding: 8px;
+  outline: none;
+  background-color: rgb(239, 238, 238);
+  color: brown;
+}
+
+.update-new-btn{
+  background-color: rgb(82, 31, 31);
+  /* color: #e8dede; */
+  cursor: pointer;
+}
+
+.edit{
+  color: white;
+}
