@@ -111,7 +111,7 @@ const updateItem = async (e) => {
   // const renderUpdateForm = () =>(
   //   <form className="update-form" onSubmit={(e)=> updateItem(e)}>
   //     <input className='update-new-input' type="text" placeholder='New Item' onChange={e => {setUpdateItemText(e.target.value)}} value={updateItemText}/>
-  //     <button className='update-new-btn' type='submit'><i class="fa-solid fa-check edit" ></i></button>
+  //     <button className='update-new-btn' type='submit'><i className="fa-solid fa-check edit" ></i></button>
 
   //   </form>
   // )
@@ -144,8 +144,8 @@ const updateItem = async (e) => {
       </form> */}
 
 
-<div class="card card1 text-center">
-  <div class="card-body">
+<div className="card card1 text-center">
+  <div className="card-body">
   <form className = "form" onSubmit={e => addItem(e)}>
       <input type="text" placeholder = "Add Todo Item" onChange={(e) => {setItemText(e.target.value)} } value={itemText}/>
       <button type="submit" disabled={isButtonDisabled} >
@@ -159,8 +159,8 @@ const updateItem = async (e) => {
   
 </div>
 
-<div class="card card2 text-center scroller" >
-  <div class="card-body" >
+<div className="card card2 text-center scroller" >
+  <div className="card-body" >
       <div className="todo-listItems" >
         <br />
         {
@@ -175,9 +175,9 @@ const updateItem = async (e) => {
               <p className="item-content" >{item.item}</p>
               <div className='deleteupdate' style={{display: 'flex', flexDirection: 'column'}}>
               {/* <button className="update-item" onClick={()=> {setIsUpdating(item._id)}}>Update</button> */}
-              <i class="fa-solid fa-pen-to-square fa-sm update"  onClick={()=> {setIsUpdating(item._id)}}></i>
+              <i className="fa-solid fa-pen-to-square fa-sm update"  onClick={()=> {setIsUpdating(item._id)}}></i>
               {/* <button className="delete-item" onClick={()=> {deleteItem(item._id)}}>Delete</button> */}
-              <i class="fa-solid fa-trash delete" onClick={()=> {deleteItem(item._id)}}></i>
+              <i className="fa-solid fa-trash delete" onClick={()=> {deleteItem(item._id)}}></i>
               </div>
             
             </>
