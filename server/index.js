@@ -4,7 +4,7 @@ const dotenv = require('dotenv').config();
 const cors = require('cors');
 
 const app = express()
-
+app.use(cors())
 //use express.json to get data into json format
 app.use(express.json());
 
