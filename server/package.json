@@ -1,8 +1,11 @@
 {
   "name": "server",
   "version": "1.0.0",
+  "homepage": "https://poojasharma922.github.io/todo",
   "main": "index.js",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "nodemon index.js"
   },
   "keywords": [],
@@ -16,6 +19,8 @@
     "mongoose": "^7.3.2",
     "nodemon": "^3.0.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
+  },
   "description": ""
 }
