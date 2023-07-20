@@ -148,13 +148,14 @@ const updateItem = async (e) => {
   <div class="card-body">
   <form className = "form" onSubmit={e => addItem(e)}>
       <input type="text" placeholder = "Add Todo Item" onChange={(e) => {setItemText(e.target.value)} } value={itemText}/>
-      <button type="submit" disabled={isButtonDisabled}>
+      <button type="submit" disabled={isButtonDisabled} >
         {
           isButtonDisabled ? <div style={{color:'gray'}}>Add</div> : <div>Add</div>
         }
       </button>
+      
   </form>
-    
+  <button onClick={()=>alert('hii')}>hiii</button>
   </div>
   
 </div>
